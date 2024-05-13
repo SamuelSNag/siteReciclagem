@@ -106,34 +106,26 @@
 				pesquisa();
 			}
 		}
+		function pesquisaNaLista(lis_item){
+			let lis_resultado=[];
+			for (i=0; i<lis_item.length; i++){
+				let lis = lis_item[i].replace("de ", "").split(" ");
+				for (j=0; j<lis.length; j++){
+					if (txt.value.toLowerCase() == lis[j].substring(0, txt.value.length).toLowerCase()){
+						lis_resultado.unshift(lis_item[i]);
+					}
+				}
+			}
+			return lis_resultado;
+		}
 		function pesquisa(){
 			papel = [], metal = [], plastico = [], vidro = [], naorec = [];
 			if (txt.value != ""){
-				for (i=0; i<Papel.length; i++){
-					if (txt.value.toLowerCase() == Papel[i].substring(0, txt.value.length).toLowerCase()){
-						papel.unshift(Papel[i]);
-					}
-				}
-				for (i=0; i<Metal.length; i++){
-					if (txt.value.toLowerCase() == Metal[i].substring(0, txt.value.length).toLowerCase()){
-						metal.unshift(Metal[i]);
-					}
-				}
-				for (i=0; i<Plastico.length; i++){
-					if (txt.value.toLowerCase() == Plastico[i].substring(0, txt.value.length).toLowerCase()){
-						plastico.unshift(Plastico[i]);
-					}
-				}
-				for (i=0; i<Vidro.length; i++){
-					if (txt.value.toLowerCase() == Vidro[i].substring(0, txt.value.length).toLowerCase()){
-						vidro.unshift(Vidro[i]);
-					}
-				}
-				for (i=0; i<NaoRec.length; i++){
-					if (txt.value.toLowerCase() == NaoRec[i].substring(0, txt.value.length).toLowerCase()){
-						naorec.unshift(NaoRec[i]);
-					}
-				}
+				papel = pesquisaNaLista(Papel);
+				metal = pesquisaNaLista(Metal);
+				plastico = pesquisaNaLista(Plastico);
+				vidro = pesquisaNaLista(Vidro);
+				naorec = pesquisaNaLista(NaoRec);
 			}else{
 				papel = Papel, metal = Metal, plastico = Plastico, vidro = Vidro, naorec = NaoRec;
 			}
