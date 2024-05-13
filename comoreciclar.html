@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Como Reciclar</title>
+	<link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/style_comoreciclar.css">
+</head>
+<body class="corpo">
+	<header id="header">
+        <a href="" class="logo">Recicla</a>
+		<div class="conteiner">
+			<div class="flex">
+                <div></div>
+				<nav>
+					<ul>
+						<li id="l1"><a href="index.html">Início</a></li>
+						<li id="l2"><a href="comoreciclar.html">Como reciclar</a></li>
+						<li id="l3"><a href="tiposmateriais.html">Tipos de materiais</a></li>
+						<li id="l4"><a href="materiais.html">Materiais recicláveis</a></li>
+						<li id="l5"><a href="contato.html">Perguntas?</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+        <div class="principal">
+            <div class="introducao">
+                <h1>Como reciclar</h1>
+                <p>Realizar a reciclagem de forma correta é fundamental, pois auxilia nos processos de reciclagem futuros.</p>
+                <p>Conhecer os <strong><a href="tiposmateriais.html" target="_blank">tipos de materiais</a></strong> também é de grande importância.</p>
+                <p>Pare realizar a reciclagem é necessário cumprir com 4 etapas: <strong>separação</strong>, <strong>limpeza</strong>, <strong>compactação</strong> e <strong>descarte</strong>.</p>
+            </div>
+            <hr>
+            <div class="etapas">
+                <section>
+                    <div id="d1">
+                        <h2>1° Etapa - Separação</h2>
+                        <p><strong>Separe</strong> os resíduos em dois, os <strong>recicláveis</strong> e os <strong>não recicláveis</strong>, para isso pode ser utilizado duas ou mais lixeiras para cada tipo de resíduo.</p>
+                        <p>É importante se informar sobre quais os materiais que de fato são recicláveis, para isso pode ser acessado a seção <strong><a href="materiais.html" target="_blank">materiais recicláveis</a></strong>.</p>
+                    </div>
+                    <figure><img src="Imagens/Lixeiras.png" alt="reciclaveis"></figure>
+                </section>
+                <section>
+                    <figure><img src="Imagens/Limpar_embalagem.png" alt="Embalagem"></figure>
+                    <div id="d2">
+                        <h2>2° Etapa - Limpeza</h2>
+                        <p><strong>Limpe</strong> os materiais, retirando sobras de comida ou líquidos, lavando se necessário para evitar odores desagradáveis. É importante que quando descartado, o material esteja <strong>seco</strong>.</p>
+                    </div>
+                </section>
+                <section>
+                    <div id="d3">
+                        <h2>3° Etapa - Compactação</h2>
+                        <p><strong>Compacte</strong> os resíduos recicláveis para <strong>diminuir seu volume</strong> e economizar espaço.</p>
+                        <p>Desta forma, podem ser amassadas as latinhas e garrafas, tirando todo o ar de dentro, e desmontando e dobrando embalagens como caixas de papelão.</p>
+                    </div>
+                    <figure><img src="Imagens/garrafa_plastica.jpg" alt="Garrafa" height="200"></figure>
+                </section>
+                <section>
+                    <figure><img src="Imagens/Caminhao.jpg" alt="Caminhao" height="200"></figure>
+                    <div id="d4">
+                        <h2>4° Etapa - Descarte</h2>
+                        <p><strong>Descarte</strong> adequadamente o lixo reciclável, para isso é importante se informar se existem <strong>caminhões de coleta</strong> para o local onde reside e pesquisar o dia e o horário em que passam, o <i>site</i> <strong><a href="https://www.reciclasampa.com.br/horarios-de-coleta" target="_blank">Reciclasampa.com.br</a></strong> disponibiliza essas informações para a região de São Paulo.</p>
+                        <p>Caso não existam caminhões de coleta, será necessário levar o lixo até um <strong>ponto de coleta</strong>, seus locais podem ser obtidos atraves dos <i>sites</i> <strong><a href="https://www.reciclasampa.com.br/pontos-de-coleta" target="_blank">Reciclasampa.com.br</a></strong> e <strong><a href="https://www.ecycle.com.br/postos/reciclagem.php" target="_blank">eCycle.com.br</a></strong></p>
+                    </div>
+                </section>
+            </div>
+        </div>
+	</main>
+    <script>
+        var cores = ["rgba(255, 0, 0, 0.25)", "rgba(20, 20, 255, 0.25)","rgba(0, 200, 0, 0.25)","rgba(255, 255, 0, 0.25)","rgb(196, 196, 196)"];
+        var coresB = ["red","blue","green", "rgb(245,245,0)", "black"];
+        var qnt = document.querySelector(".etapas").children;
+        var x=0;
+        for (i=0; i<qnt.length; i++){
+            obj = document.querySelector("#d"+(i+1));
+            if (i%2!=0){
+                qnt[i].style.justifyContent = "flex-end";
+                obj.style.boxShadow = "-5px 6px 6px rgba(58, 58, 58, 0.267)";
+            } else {
+                qnt[i].style.justifyContent = "flex-start";
+                obj.style.boxShadow = "5px 6px 6px rgba(58, 58, 58, 0.267)";
+            }
+            if(x>=5){
+                x=0;
+            }
+            obj.style.backgroundColor = cores[x];
+            obj.style.borderColor = coresB[x];
+            x++;
+        }
+    </script>
+	<footer>
+        <div class="referencias">
+            <p>Referencias:</p>
+            <div class="ref_linhas">
+                <nav>
+                    <ul>
+                        <li><figure>
+                            <figcaption><a href="https://www.reciclasampa.com.br/" target="_blank">Reciclasampa.com.br</a></figcaption>
+                            <a href="https://www.reciclasampa.com.br/" target="_blank"><img src="Imagens/reciclasampa.png" alt="ReciclaSampa" ></a>
+                        </figure></li>
+                        <li><figure>
+                            <figcaption><a href="https://www.ecycle.com.br/" target="_blank">eCycle.com.br</a></figcaption>
+                            <a href="https://www.ecycle.com.br/" target="_blank"><img src="Imagens/eCycle.png" alt="eCycle"></a>
+                        </figure></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="links">
+            <nav>
+                <ul>
+                    <li><a href="comoreciclar.html" target="_blank">Como reciclar</a></li>
+                    <li><a href="tiposmateriais.html" target="_blank">Tipos de materiais</a></li>
+                    <li><a href="materiais.html" target="_blank">Materiais recicláveis</a></li>
+                    <li><a href="contato.html" target="_blank">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+	</footer>
+</body>
+</html>

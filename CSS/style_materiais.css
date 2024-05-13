@@ -1,0 +1,108 @@
+main {
+    text-align: center;
+    display: ruby-text;
+}
+.principal {
+    margin: 16px 0;
+    max-width: 1100px;
+    width: 100%;
+    min-height: 65dvh;
+    text-align: center;
+}
+h1 {
+    margin: 20px;
+    margin-top: 30px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.divP {
+    margin-bottom: 10px;
+}
+.texto {
+    padding: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.pesquisar {
+    padding: 6px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.materiais {
+    display: flex;
+}
+.material {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 20%;
+}
+.material h2 {
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulo {
+    padding: 14px 0px;
+}
+.aba {
+    margin: 0;
+    padding-top: 0;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    height: 0px;
+    transition: .5s;
+    text-align: left;
+}
+.aba ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.aba ul li {
+    /*border-bottom: 2px solid black;*/
+    padding: 10px 10px 10px 20px;
+    margin: 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+    font-size: 16px;
+}
+.aba hr {
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin: 0px 8px;
+}
+
+#Papel div {
+    background-color: rgba(20, 20, 255, 0.25);
+}
+#Metal div{
+    background-color: rgba(255, 255, 0, 0.25);
+}
+#Plastico div {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+#Vidro div {
+    background-color: rgba(0, 200, 0, 0.25);
+}
+#NaoRec div {
+    background-color: rgb(196, 196, 196);
+}
+
+#Papel h2:hover {
+    color: rgb(0,0,255);
+}
+#Metal h2:hover {
+    color: rgb(141, 141, 0);
+}
+#Plastico h2:hover {
+    color: rgb(220,0,0);
+}
+#Vidro h2:hover {
+    color: rgb(0, 190, 0);
+}
+#NaoRec h2:hover {
+    color: gray;
+}

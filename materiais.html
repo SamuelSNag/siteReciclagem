@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Materiais reciclaveis</title>
+	<link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/style_materiais.css">
+</head>
+<body class="corpo">
+	<header id="header">
+        <a href="" class="logo">Recicla</a>
+		<div class="conteiner">
+			<div class="flex">
+                <div></div>
+				<nav>
+					<ul>
+						<li id="l1"><a href="index.html">Início</a></li>
+						<li id="l2"><a href="comoreciclar.html">Como reciclar</a></li>
+						<li id="l3"><a href="tiposmateriais.html">Tipos de materiais</a></li>
+						<li id="l4"><a href="materiais.html">Materiais recicláveis</a></li>
+						<li id="l5"><a href="contato.html">Perguntas?</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+        <div class="principal">
+			<h1>Materiais</h1>
+			<div class="divP">
+				<input type="text" class="texto">
+				<input type="button" class="pesquisar" value="Pesquisar" onclick="pesquisa()">
+			</div>
+			<div class="materiais">
+
+				<div class="material" id="Papel">
+					<div class="titulo">
+						<h2>Papel ▸</h2>
+					</div>
+					<div class="aba">
+						<ul>
+							<li>item</li>
+						</ul>
+					</div>
+				</div>
+				<div class="material" id="Metal">
+					<div class="titulo">
+						<h2>Metal ▸</h2>
+					</div>
+					<div class="aba">
+						<ul>
+							<li>item</li>
+						</ul>
+					</div>
+				</div>
+				<div class="material" id="Plastico">
+					<div class="titulo">
+						<h2>Plastico ▸</h2>
+					</div>
+					<div class="aba">
+						<ul>
+							<li>item</li>
+						</ul>
+					</div>
+				</div>
+				<div class="material" id="Vidro">
+					<div class="titulo">
+						<h2>Vidro ▸</h2>
+					</div>
+					<div class="aba">
+						<ul>
+							<li>item</li>
+						</ul>
+					</div>
+				</div>
+				<div class="material" id="NaoRec">
+					<div class="titulo">
+						<h2>Não reciclaveis ▸</h2>
+					</div>
+					<div class="aba">
+						<ul>
+							<li>item</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+        </div>
+	</main>
+	<script>
+		var eventoClick = new Event("click");
+		var Papel = ['Papel','Papel kraft', 'Papeis impressos', 'Papeis de escritório', 'Papeis de desenho', 'Embalagem de ovo', 'Cartolinas', 'Folhas de caderno', 'Papelão', 'Caixas', 'Revistas', 'Jornais'].sort();
+		var Metal = [ 'Papeis metalizados', 'Papel alumínio','Canos de metais', 'Molduras de metais', 'Latas de sardinha', 'Latas de refrigerante', 'Latas de cerveja', 'Latas de azeite', 'Fios de cobre', 'Ferragens', 'Latas de alumínio'].sort();
+		var Plastico = ['Sacola', 'Copos de plastico', 'Sacos plasticos', 'Tubos', 'PVC', 'Garrafas de água', 'Garrafas de refrigerante', 'Garrafas PET', 'Frascos', 'Potes de alimentos', 'Tampas de plastico'].sort();
+		var Vidro = ['Cacos de vidro', 'Frascos de perfume', 'Copos de vidro', 'Garrafas de bebida', 'Frascos de vidro', 'Potes de vidro'].sort();
+		var NaoRec = ['Papel celofane', 'Embalagens plasticas', 'Alimentos', 'Lixo orgânico', 'Madeiras', 'Baterias', 'Pilhas', 'Vidros temperados', 'Lâmpadas', 'Cerâmica', 'Ampolas de medicamentos', 'Cristal', 'Espelho', 'Acrílicos', 'Teclados', 'Espuma', 'Isopor', 'Tomadas', 'Papeis plastificados', 'Guardanapos', 'Papel higiênico', 'Papel toalha', 'Fotografias', 'Papel carbono', 'Fita crepe', 'Etiquetas', 'Adesivos', 'Latas de combustivel', 'Latas de tinta', 'Esponja de aço', 'Grampos', 'Clipes'].sort();
+		var papel = Papel, metal = Metal, plastico = Plastico, vidro = Vidro, naorec = NaoRec;
+		
+		var txt = document.querySelector(".texto");
+		document.body.onkeypress = tecla;
+
+		var elementos_h2= document.querySelectorAll("h2");
+		var abrir = false;
+
+		function tecla(){
+			if (event.keyCode == 13) {
+				pesquisa();
+			}
+		}
+		function pesquisa(){
+			papel = [], metal = [], plastico = [], vidro = [], naorec = [];
+			if (txt.value != ""){
+				for (i=0; i<Papel.length; i++){
+					if (txt.value.toLowerCase() == Papel[i].substring(0, txt.value.length).toLowerCase()){
+						papel.unshift(Papel[i]);
+					}
+				}
+				for (i=0; i<Metal.length; i++){
+					if (txt.value.toLowerCase() == Metal[i].substring(0, txt.value.length).toLowerCase()){
+						metal.unshift(Metal[i]);
+					}
+				}
+				for (i=0; i<Plastico.length; i++){
+					if (txt.value.toLowerCase() == Plastico[i].substring(0, txt.value.length).toLowerCase()){
+						plastico.unshift(Plastico[i]);
+					}
+				}
+				for (i=0; i<Vidro.length; i++){
+					if (txt.value.toLowerCase() == Vidro[i].substring(0, txt.value.length).toLowerCase()){
+						vidro.unshift(Vidro[i]);
+					}
+				}
+				for (i=0; i<NaoRec.length; i++){
+					if (txt.value.toLowerCase() == NaoRec[i].substring(0, txt.value.length).toLowerCase()){
+						naorec.unshift(NaoRec[i]);
+					}
+				}
+			}else{
+				papel = Papel, metal = Metal, plastico = Plastico, vidro = Vidro, naorec = NaoRec;
+			}
+			console.log(papel);
+			atualiza();
+			for(i=0; i<elementos_h2.length; i++){
+				abrir = true;
+				elementos_h2[i].dispatchEvent(eventoClick);
+				abrir = false;
+			}
+		}
+		atualiza();
+		function atualiza() {
+			for (i=0; i<elementos_h2.length; i++){
+
+				let ele = document.querySelector("#"+elementos_h2[i].parentElement.parentElement.id+" ul");
+				let lista = selecionaItems(elementos_h2[i].parentElement.parentElement.id);
+				let lista_items="";
+				for(j=0;j<lista.length;j++){
+					lista_items+="<li>"+lista[j]+"</li>";
+					if(j <lista.length-1){
+						lista_items +="<hr>";
+					}
+				}
+				//console.log(lista);
+				console.log(lista.length);
+				ele.innerHTML = lista_items;
+				//elementos_h2[0].dispatchEvent(eventoClick);
+			}
+		}
+		for (i=0; i<elementos_h2.length; i++){
+			elementos_h2[i].addEventListener("click", function abre(){
+				let tam_lista = selecionaItems(this.parentElement.parentElement.id)
+				let aba = document.querySelector("#"+this.parentElement.parentElement.id+" .aba");
+				let txt = document.querySelector("#"+this.parentElement.parentElement.id+" h2");
+				let texto = txt.getInnerHTML().substring(0, txt.getInnerHTML().length-1);
+				if (aba.style.height == "0px" || aba.style.height=="" || abrir){
+					let altura_li = document.querySelector("#"+this.parentElement.parentElement.id+" ul").offsetHeight;
+					txt.innerHTML = texto+"▾";
+					aba.style.height = ""+altura_li+"px";
+				} else if (aba.style.height != "0px") {
+					aba.style.height = "0px";
+					txt.innerHTML = texto+"▸";
+				}
+			});
+		}
+		function selecionaItems(nome){
+			let lista=[];
+			if(nome=="Papel"){
+				lista = papel;
+			} else if (nome=="Plastico"){
+				lista = plastico;
+			} else if (nome=="Vidro"){
+				lista = vidro;
+			} else if (nome=="Metal"){
+				lista = metal;
+			} else if (nome=="NaoRec"){
+				lista = naorec;
+			}
+			return lista;
+		}
+	</script>
+	<footer>
+        <div class="referencias">
+            <p>Referencias:</p>
+            <div class="ref_linhas">
+                <nav>
+                    <ul>
+                        <li><figure>
+                            <figcaption><a href="https://www.reciclasampa.com.br/" target="_blank">Reciclasampa.com.br</a></figcaption>
+                            <a href="https://www.reciclasampa.com.br/" target="_blank"><img src="Imagens/reciclasampa.png" alt="ReciclaSampa" ></a>
+                        </figure></li>
+                        <li><figure>
+                            <figcaption><a href="https://www.ecycle.com.br/" target="_blank">eCycle.com.br</a></figcaption>
+                            <a href="https://www.ecycle.com.br/" target="_blank"><img src="Imagens/eCycle.png" alt="eCycle"></a>
+                        </figure></li>
+                    </ul>
+                </nav>
+				<nav>
+                    <ul>
+                        <li><figure>
+                            <figcaption><a href="https://www.pensamentoverde.com.br" target="_blank">Pensamentoverde.com.br</a></figcaption>
+                            <a href="https://www.pensamentoverde.com.br" target="_blank"><img src="Imagens/pensamentoVerde.png" alt="PensamentoVerde" ></a>
+                        </figure></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="links">
+            <nav>
+                <ul>
+                    <li><a href="comoreciclar.html" target="_blank">Como reciclar</a></li>
+                    <li><a href="tiposmateriais.html" target="_blank">Tipos de materiais</a></li>
+                    <li><a href="materiais.html" target="_blank">Materiais recicláveis</a></li>
+                    <li><a href="contato.html" target="_blank">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+	</footer>
+</body>
+</html>

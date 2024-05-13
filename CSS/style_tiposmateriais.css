@@ -1,0 +1,116 @@
+.principal {
+    margin: 16px 8%;
+    padding: 10px;
+}
+.introducao ul{
+    margin: 17px 0px;
+    padding-left: 25px;
+}
+.introducao ul li {
+    margin: 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.principal .conteudo {
+    margin: 0;
+    margin-left: 12px;
+}
+.items {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 180px;
+    width: max-content;
+}
+.cartao {
+    background-color: transparent;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+}
+.cartao-area {
+    border: 2px solid transparent;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform .8s;  
+    transform-style: preserve-3d;
+}
+.cartao-front, .cartao-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.cartao-front {
+    background-color: #a75c5c;
+    color: black;
+}
+.cartao-back {
+    background-color: rgb(255, 30, 30);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.principal .cartao p {
+    color: black;
+    margin-top: 12px;
+    line-height: 21px;
+    text-wrap: balance;
+    padding: 0 10px;
+}
+.cartao img {
+    background-color: transparent;
+    height: 200px;
+    width: 150px;
+}
+section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-top: 14px;
+    margin: 16px 0;
+}
+.principal #um {
+    margin-top: 22px;
+}
+#dois {
+    justify-content: space-evenly;
+    padding-top: 0px;
+}
+.principal figure{
+    margin: 0;
+}
+.principal p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.principal p a {
+    text-decoration: none;
+    color: black;
+}
+.principal p a:hover {
+    text-decoration: underline;
+}
+.principal h1, h2, h3{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.principal h1, h2 {
+    margin-top: 16px;
+}
+.principal h2 {
+    color: black;
+    margin-left: 4px;
+}
+.principal h4 {
+    margin: 0;
+    margin-top: 17px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}

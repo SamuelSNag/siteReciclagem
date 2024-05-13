@@ -1,0 +1,60 @@
+
+.principal {
+    margin: 16px 8%;
+    padding: 10px;
+}
+.etapas {
+    display: block;
+    max-width: 1000px;
+}
+.etapas div {
+    margin: 20px 0;
+    padding: 10px;
+    min-width: 350px;
+    width: 60%;
+    min-height: 120px;
+    height: max-content;
+    background-color: rgb(196, 196, 196);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.etapas section {
+    display: flex;
+}
+.etapas section figure {
+    margin: 20px 20px;
+    padding: 0;
+    min-width: max-content;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.etapas section figure img {
+    height: 180px;
+}
+h1 {
+    margin: 0;
+    margin-top: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.introducao p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.etapas h2 {
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.etapas p {
+    margin: 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+}
+.principal p a {
+    text-decoration: none;
+    color: black;
+}
+.principal p a:hover {
+    text-decoration: underline;
+}

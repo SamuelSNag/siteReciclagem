@@ -1,0 +1,135 @@
+.corpo {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    min-width: 950px;
+}
+.conteiner {
+    margin: auto;
+}
+main {
+    min-height: 65dvh;
+    padding: 0px;
+    margin: 0px;
+}
+.logo {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+.flex {
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+.flex nav {
+    margin: 0;
+    padding: 0;
+}
+header {
+    margin: 0;
+    padding: 20px 4%;
+    padding-bottom: 6px;
+    background-color: rgb(179, 196, 214);
+    box-shadow: 0px 7px 8px rgba(185, 197, 207, 0.87);
+}
+header ul {
+    padding: 0;
+    padding-top: 10px;
+	list-style-type: none;
+    margin-top: 0;
+}
+header ul li {
+	display: inline-block;
+	margin: 0 14px;
+}
+header ul li a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+    padding: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+#l1 :hover {
+    border-bottom: 2px solid rgb(220,0,0);
+    color: rgb(220,0,0);
+}
+#l2 :hover {
+    border-bottom: 2px solid rgb(0,0,255);
+    color: rgb(0,0,255);
+}
+#l3 :hover {
+    border-bottom: 2px solid rgb(0,168,0);
+    color: rgb(0, 168, 0);
+}
+#l4 :hover {
+    border-bottom: 2px solid rgb(245,245,0);
+    color: rgb(245,245,0);
+}
+#l5 :hover {
+    border-bottom: 2px solid rgb(165,42,42);
+    color: rgb(165,42,42);
+}
+
+footer {
+    padding: 10px 4%;
+    margin: 0px;
+    background-color: lightslategray;
+    display: flex;
+    justify-content: space-between;
+}
+.referencias nav ul{
+    list-style-type: none;
+    margin: 0px 14px;
+    padding: 0;
+}
+.referencias nav ul li {
+    margin: 10px 0px;
+}
+.referencias figure {
+    margin: 0;
+    padding: 0;
+}
+.referencias a{
+    text-decoration: none;
+    color: white;
+}
+.referencias figcaption {
+    margin-bottom: 2px;
+}
+.referencias p {
+    margin: 0px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.referencias img {
+    height: 30px;
+}
+.referencias .ref_linhas {
+    display: flex;
+}
+
+.links {
+    margin: 20px 25% 0px 0px;
+    padding: 0px;
+}
+.links nav ul {
+    list-style-type: disc;
+    color: white;
+    margin: 0px;
+    padding: 0;
+}
+.links nav ul li {
+    margin: 10px 0px;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
