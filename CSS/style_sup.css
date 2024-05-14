@@ -1,8 +1,18 @@
 .corpo {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(167, 167, 167);
     margin: 0;
     padding: 0;
-    min-width: 950px;
+    min-width: 0;
+}
+.btn {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 6%;
+}
+.topo {
+    display: flex;
+    justify-content: space-between;
 }
 .conteiner {
     margin: auto;
@@ -20,38 +30,46 @@ main {
 }
 .flex {
 	display: flex;
-	align-items: center;
+    transition: 0.4s;
+	align-items: flex-start;
     justify-content: space-between;
+    overflow: hidden;
+    height: 0px;
 }
 .flex nav {
     margin: 0;
     padding: 0;
+    padding-right: 10px;
 }
 header {
     margin: 0;
     padding: 20px 4%;
-    padding-bottom: 6px;
+    padding-bottom: 0px;
     background-color: rgb(179, 196, 214);
     box-shadow: 0px 7px 8px rgba(185, 197, 207, 0.87);
 }
 header ul {
-    padding: 0;
-    padding-top: 10px;
+    padding: 0px;
 	list-style-type: none;
-    margin-top: 0;
+    margin: 0;
 }
 header ul li {
-	display: inline-block;
-	margin: 0 14px;
+	display: block;
+	margin: 25px 14px;
+    text-align: end;
 }
 header ul li a {
+    border-bottom: solid rgb(124, 124, 124) 1px;
+    width: 100%;
 	color: rgb(0, 0, 0);
 	text-decoration: none;
-    padding: 20px;
-    padding-bottom: 20px;
+    padding: 10px 5px 10px 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 0.94em;
+}
+#l1 {
+    margin: 12px 14px 25px 14px;
 }
 #l1 :hover {
     border-bottom: 2px solid rgb(220,0,0);
@@ -79,6 +97,7 @@ footer {
     margin: 0px;
     background-color: lightslategray;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .referencias nav ul{
@@ -114,9 +133,8 @@ footer {
 .referencias .ref_linhas {
     display: flex;
 }
-
 .links {
-    margin: 20px 25% 0px 0px;
+    margin: 20px 25% 0px 4%;
     padding: 0px;
 }
 .links nav ul {

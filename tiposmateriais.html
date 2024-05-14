@@ -209,6 +209,7 @@
             let card = cartoes[i].children[0];
             card.children[1].style.backgroundColor = cores[i];
             cartoes[i].addEventListener("mouseover", function (){
+                console.log(this.parentElement);
                 this.parentElement.children[0].style.color = coresB[this.parentElement.id-1];
                 this.children[0].style.borderColor = coresB[this.parentElement.id-1];
             });
