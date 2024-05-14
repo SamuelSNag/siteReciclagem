@@ -12,12 +12,13 @@ main {
 h1 {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
 }
 .titulo p {
     margin: 0;
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9375em;
+    font-size: 0.9375rem;
 }
 .conteudo {
     margin: 10px 0px;
@@ -38,10 +39,10 @@ h1 {
 .conteudo fieldset label {
     color: black;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
 }
 .conteudo fieldset input {
-    font-size: 0.875em;
+    font-size: 0.875rem;
     font-family: Arial, Helvetica, sans-serif;
     width: 260px;
     padding: 4px 8px;
@@ -51,7 +52,7 @@ h1 {
     border-width: 1px;
 }
 .conteudo fieldset textarea {
-    font-size: 0.875em;
+    font-size: 0.875rem;
     font-family: Arial, Helvetica, sans-serif;
     width: 260px;
     padding: 6px 8px;
@@ -62,6 +63,6 @@ h1 {
 .conteudo fieldset button {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 0.875em;
+    font-size: 0.875rem;
     padding: 3px 16px;
 }

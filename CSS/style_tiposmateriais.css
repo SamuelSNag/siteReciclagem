@@ -9,7 +9,7 @@
 .introducao ul li {
     margin: 10px 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.0625em;
+    font-size: 1.0625rem;
 }
 .principal .conteudo {
     margin: 0;
@@ -87,7 +87,7 @@ section {
 }
 .principal p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.0625em;
+    font-size: 1.0625rem;
 }
 .principal p a {
     text-decoration: none;
@@ -103,14 +103,14 @@ section {
 .principal h1, h2 {
     margin-top: 16px;
 }
+.princiapl h1 {
+    font-size: 2rem;
+}
 .principal h2 {
     color: black;
     margin-left: 4px;
+    font-size: 1.5rem;
 }
-.principal h4 {
-    margin: 0;
-    margin-top: 17px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.0625em;
+.principal h3 {
+    font-size: 1.17rem;
 }

@@ -14,6 +14,7 @@ h1 {
     margin-top: 30px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
 }
 .divP {
     margin-bottom: 10px;
@@ -21,12 +22,12 @@ h1 {
 .texto {
     padding: 6px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
 }
 .pesquisar {
     padding: 6px 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.875em;
+    font-size: 0.875rem;
     font-weight: bold;
 }
 .materiais {
@@ -42,6 +43,7 @@ h1 {
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
 }
 .titulo {
     padding: 14px 0px;
@@ -66,7 +68,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: rgb(58, 58, 58);
-    font-size: 1em;
+    font-size: 1rem;
 }
 .aba hr {
     border: none;
