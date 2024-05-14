@@ -9,7 +9,7 @@
 .introducao ul li {
     margin: 10px 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 1.0625em;
 }
 .principal .conteudo {
     margin: 0;
@@ -59,7 +59,7 @@
 .principal .cartao p {
     color: black;
     margin-top: 12px;
-    line-height: 21px;
+    line-height: 1.2353;
     text-wrap: balance;
     padding: 0 10px;
 }
@@ -87,7 +87,7 @@ section {
 }
 .principal p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 1.0625em;
 }
 .principal p a {
     text-decoration: none;
@@ -112,5 +112,5 @@ section {
     margin-top: 17px;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 1.0625em;
 }

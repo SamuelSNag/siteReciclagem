@@ -1,5 +1,6 @@
 main {
-    display: ruby-text;
+    display: flex;
+    justify-content: center;
 }
 .principal {
     text-align: center;
@@ -16,7 +17,7 @@ h1 {
     margin: 0;
     margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 0.9375em;
 }
 .conteudo {
     margin: 10px 0px;
@@ -37,9 +38,10 @@ h1 {
 .conteudo fieldset label {
     color: black;
     font-weight: bold;
+    font-size: 1em;
 }
 .conteudo fieldset input {
-    font-size: 14px;
+    font-size: 0.875em;
     font-family: Arial, Helvetica, sans-serif;
     width: 260px;
     padding: 4px 8px;
@@ -49,7 +51,7 @@ h1 {
     border-width: 1px;
 }
 .conteudo fieldset textarea {
-    font-size: 14px;
+    font-size: 0.875em;
     font-family: Arial, Helvetica, sans-serif;
     width: 260px;
     padding: 6px 8px;
@@ -60,6 +62,6 @@ h1 {
 .conteudo fieldset button {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.875em;
     padding: 3px 16px;
 }
