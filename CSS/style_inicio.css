@@ -1,8 +1,7 @@
-
 h1 {
     margin: 0px;
     margin-top: 16px;
-    font-size: 40px;
+    font-size: 2em;
 }
 .principal {
     margin: 16px 8%;
@@ -27,11 +26,12 @@ h1 {
 }
 .principal p {
     margin: 12px 12px;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.125em;
+    line-height: 1.28;
 }
 .principal h2 {
     margin: 4px;
+    font-size: 1.5em;
 }
 .principal p a {
     text-decoration: none;
