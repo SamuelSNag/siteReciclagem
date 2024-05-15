@@ -1,0 +1,45 @@
+h1 {
+    margin: 0px;
+    margin-top: 16px;
+    font-size: 2em;
+}
+.principal {
+    margin: 16px 8%;
+    padding: 10px;
+}
+.principal section {
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+.principal section div {
+    margin: 16px 0;
+    padding: 10px;
+    background-color: rgb(196, 196, 196);
+    width: 75%;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.principal h1, h2, p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.principal p {
+    margin: 12px 12px;
+    font-size: 1.125em;
+    line-height: 1.28;
+}
+.principal h2 {
+    margin: 4px;
+    font-size: 1.5em;
+}
+.principal p a {
+    text-decoration: none;
+    color: black;
+}
+.principal p a:hover {
+    text-decoration: underline;
+}
+.referencias #wwf img {
+    height: 45px;
+}
