@@ -103,8 +103,8 @@ section {
 .principal h1, h2 {
     margin-top: 16px;
 }
-.princiapl h1 {
-    font-size: 2rem;
+.principal h1 {
+    font-size: 2em;
 }
 .principal h2 {
     color: black;

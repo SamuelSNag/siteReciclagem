@@ -8,7 +8,10 @@
 </head>
 <body class="corpo">
 	<header id="header">
-        <a href="" class="logo">Recicla</a>
+        <div class="topo">
+            <a href="" class="logo">Recicla</a>
+            <div class="btn">≡</div>
+        </div>
 		<div class="conteiner">
 			<div class="flex">
                 <div></div>
@@ -130,7 +133,7 @@
 				papel = Papel, metal = Metal, plastico = Plastico, vidro = Vidro, naorec = NaoRec;
 			}
 			atualiza();
-			for(i=0; i<elementos_h2.length; i++){
+			for(i=0; i<elementos_h2.length; i++){	
 				abrir = true;
 				elementos_h2[i].dispatchEvent(eventoClick);
 				abrir = false;
@@ -182,6 +185,9 @@
 			}
 			return lista;
 		}
+		function mobile(){
+			document.querySelector(".attMob").innerHTML = '<link rel="stylesheet" href="CSS/style_mob_materiais.css">';
+		}
 	</script>
 	<footer>
         <div class="referencias">
@@ -219,6 +225,9 @@
                 </ul>
             </nav>
         </div>
+		<section class="att"></section>
+		<section class="attMob"></section>
 	</footer>
+    <script type="text/javascript" src="js/script_base.js"></script>
 </body>
 </html>

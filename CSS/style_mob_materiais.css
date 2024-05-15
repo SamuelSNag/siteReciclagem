@@ -1,0 +1,29 @@
+.principal h1 {
+    font-size: 2em;
+}
+.divP {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto {
+    font-size: 1em;
+    margin: 0.5em;
+}
+.pesquisar {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+.materiais {
+    flex-direction: column;
+}
+.materiais .material {
+    width: auto;
+}
+.material h2 {
+    font-size: 1.5em;
+}
+.aba ul li {
+    font-size: 1.2em;
+    padding: 0.625em;
+}
