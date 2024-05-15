@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     min-width: 1000px;
+    font-size: 32px;
 }
 .btn {
     display: none;
@@ -17,7 +18,7 @@ main {
 }
 .logo {
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-weight: bold;
     color: black;
 }
@@ -54,7 +55,7 @@ header ul li a {
     padding-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 0.94rem;
+    font-size: 0.94em;
 }
 #l1 :hover {
     border-bottom: 2px solid rgb(220,0,0);
@@ -98,7 +99,7 @@ footer {
 }
 .referencias a{
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1em;
     color: white;
 }
 .referencias figcaption {
@@ -109,7 +110,7 @@ footer {
     margin-top: 10px;
     color: white;
     font-weight: bold;
-    font-size: 1.125rem;
+    font-size: 1.125em;
 }
 .referencias img {
     height: 30px;
@@ -117,7 +118,6 @@ footer {
 .referencias .ref_linhas {
     display: flex;
 }
-
 .links {
     margin: 20px 25% 0px 0px;
     padding: 0px;
@@ -134,6 +134,6 @@ footer {
 .links a {
     text-decoration: none;
     color: white;
-    font-size: 1.0625rem;
+    font-size: 1.0625em;
     font-family: 'Times New Roman', Times, serif;
 }
